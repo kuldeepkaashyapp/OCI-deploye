@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Server Status</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --panel: #111827;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --success: #22c55e;
+        --success-dark: #16a34a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, var(--bg), #1e293b);
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+      }
+
+      .card {
+        background: rgba(17, 24, 39, 0.9);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        padding: 40px 50px;
+        text-align: center;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+      }
+
+      .status {
+        width: 18px;
+        height: 18px;
+        background: var(--success);
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 0 0 18px rgba(34, 197, 94, 0.8);
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: 2.2rem;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="status" aria-label="Server online"></div>
+      <h1>Server is up</h1>
+      <p>The application is running successfully.</p>
+    </div>
+  </body>
+</html>
